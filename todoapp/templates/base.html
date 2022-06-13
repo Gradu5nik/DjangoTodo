@@ -9,7 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
 </head>
 <body>
-    <div style="margin: 50px 0 0 0;" class="ui container">
+    <div style="padding: 50px 0 40px 0;" class="ui container">
         <h1 class="ui center aligned header">To Do app</h1>
         <form action="/add" method="post" class="ui form">
             {% csrf_token %}
@@ -33,5 +33,12 @@
         </div>
         {%endfor%}
     </div>
+    <footer style="position:fixed; bottom: 0px;width:100%;background-color: rgb(244, 237, 237);">
+        
+        <div class="ui container"style="padding: 1em 0">
+            <a href="/admin">admin page</a>
+        </div>
+        
+    </footer>
 </body>
 </html>
